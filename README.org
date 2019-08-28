@@ -1,3 +1,4 @@
+#+OPTIONS: tex:imagemagick
 hello
 
 $a + b$
