@@ -3,12 +3,23 @@ hello
 
 $a + b$
 
-\begin{equation}
+\begin{equation*}
         \int_\Omega f(x)\,dx
-\end{equation}
+\end{equation*}
 
 * asddasd
 
 ** asds
 
 ** asdsa
+
+#+BEGIN_SRC matlab
+%% Example 1: Fundamental solution
+% In this example, we look at grid orientation effects for different
+% discretizations
+mrstModule add upr                                                    % Generate PEBI grids
+mrstModule add incomp mpfa mimetic vem vemmech                        % Incompressible solvers
+mrstModule add ad-core ad-props ad-blackoil blackoil-sequential ntpfa % Nonlinear TPFA (requires AD)
+#+END_SRC
+
+

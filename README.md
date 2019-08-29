@@ -1,6 +1,6 @@
-- [asddasd](#orgb3a335e)
-  - [asds](#org6b7328e)
-  - [asdsa](#org0efa33f)
+- [asddasd](#org7b3915f)
+  - [asds](#org618dda3)
+  - [asdsa](#orgcfc553f)
 
 hello
 
@@ -17,16 +17,25 @@ hello
 </div>
 
 
-<a id="orgb3a335e"></a>
+<a id="org7b3915f"></a>
 
 # asddasd
 
 
-<a id="org6b7328e"></a>
+<a id="org618dda3"></a>
 
 ## asds
 
 
-<a id="org0efa33f"></a>
+<a id="orgcfc553f"></a>
 
 ## asdsa
+
+```matlab
+%% Example 1: Fundamental solution
+% In this example, we look at grid orientation effects for different
+% discretizations
+mrstModule add upr                                                    % Generate PEBI grids
+mrstModule add incomp mpfa mimetic vem vemmech                        % Incompressible solvers
+mrstModule add ad-core ad-props ad-blackoil blackoil-sequential ntpfa % Nonlinear TPFA (requires AD)
+```
